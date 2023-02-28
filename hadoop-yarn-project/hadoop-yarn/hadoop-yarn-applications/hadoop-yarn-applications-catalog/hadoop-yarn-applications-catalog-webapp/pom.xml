@@ -268,6 +268,7 @@
                 <configuration>
                     <workingDirectory>target</workingDirectory>
                 </configuration>
+		<!--
                 <executions>
                     <execution>
                         <id>install node and yarn</id>
@@ -287,6 +288,7 @@
                         </goals>
                     </execution>
                 </executions>
+	    -->
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
