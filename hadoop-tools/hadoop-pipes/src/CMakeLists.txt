@@ -24,6 +24,7 @@ include(HadoopCommon)
 find_package(OpenSSL REQUIRED)
 
 include_directories(
+    /usr/include/tirpc
     main/native/utils/api
     main/native/pipes/api
     ${CMAKE_CURRENT_SOURCE_DIR}
@@ -74,4 +75,5 @@ target_link_libraries(hadooppipes
     ${OPENSSL_LIBRARIES}
     ${LIB_DL}
     ${LIB_NET}
+    /usr/lib64/libtirpc.so
 )
